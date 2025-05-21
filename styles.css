@@ -1,3 +1,79 @@
-h1 {
-    color: green;
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
 }
+
+@font-face {
+    font-family: norse-bold;
+    src: url(./font/Norse-Bold.otf);
+}
+
+:root {
+    font-size: 16px;
+}
+
+a {
+    color: inherit;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+/* --------- leftside image and banner ---------- */
+.sideImage {
+    flex: .4 .4 0;
+    align-self: stretch;
+
+    position: relative;
+
+    background-image: url(./img/daniil-silantev--cY_x-urW6s-unsplash.jpg);
+    background-size: cover;
+    background-position: center center;
+
+    color: white;
+    text-align: center;
+}
+
+.sideImage > .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 15%;
+
+    height: 12rem;
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.sideImage > .banner > h1 {
+    font-family: norse-bold, serif;
+    font-size: 5rem;
+
+    padding-left: .5rem;
+}
+
+.sideImage > .banner > img {
+    height: 8rem;
+    width: auto;
+}
+
+.sideImage > .reference {
+    position: absolute;
+    bottom: 0%;
+
+    width: 100%;
+}
+
+
+
+
+
