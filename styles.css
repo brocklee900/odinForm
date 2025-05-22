@@ -79,9 +79,10 @@ body {
 /* ------------ formSide ------------ */
 .formSide {
     display: flex;
-    align-items: stretch;
     flex: calc(1 - var(--left-side-ratio)) calc(1 - var(--left-side-ratio)) 0;
     flex-direction: column;
+
+    font-family: Arial;
 }
 
 .formSide > * {
@@ -89,22 +90,24 @@ body {
     background-color: rgb(250, 250, 250);
 }
 
+.formSide p {
+    padding-bottom: 3vh;
+}
+
+/* ----------- topside ------------- */
 .formSide > .topContent {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     
-    padding-top: 20vh;
+    padding-top: 12vh;
     padding-right: 10vw;
-    padding-bottom: 5vh;
+    padding-bottom: 3vh;
 }
 
-.formSide > .topContent > p {
-    padding-bottom: 2vh;
-}
-
+/* ------------- formcontent ------------- */
 .formSide > .formContent {
     position: relative;
     
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     background-color: white;
     
     padding-top: 3vh;
@@ -113,6 +116,31 @@ body {
     box-shadow: 2px 3px 2px 1px rgb(192, 192, 192);
 }
 
+.formSide > .formContent > form > .inputSection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.formSide > .formContent > form > .inputSection > .inputGroup {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    padding-right: 5vw;
+}
+
+.inputGroup > label {
+    font-size: .75rem;
+    letter-spacing: .15rem;
+    color:rgb(128, 128, 128)
+}
+
+.inputGroup > input {
+    height: 3vh;
+    width: auto;
+}
+
+/* ----------------- bottom content --------------- */
 .formSide > .bottomContent {
     display: flex;
     flex-direction: column;
