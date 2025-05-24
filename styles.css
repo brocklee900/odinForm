@@ -82,7 +82,7 @@ body {
     flex: calc(1 - var(--left-side-ratio)) calc(1 - var(--left-side-ratio)) 0;
     flex-direction: column;
 
-    font-family: Arial;
+    font-family: Helvetica;
 }
 
 .formSide > * {
@@ -98,6 +98,7 @@ body {
 .formSide > .topContent {
     font-size: 1.5rem;
     
+    
     padding-top: 12vh;
     padding-right: 10vw;
     padding-bottom: 3vh;
@@ -108,10 +109,12 @@ body {
     position: relative;
     
     font-size: 1.5rem;
+    font-weight:600;
+
     background-color: white;
     
     padding-top: 3vh;
-    padding-bottom: 10vh;
+    padding-bottom: 5vh;
     
     box-shadow: 2px 3px 2px 1px rgb(192, 192, 192);
 }
@@ -132,12 +135,37 @@ body {
 .inputGroup > label {
     font-size: .75rem;
     letter-spacing: .15rem;
-    color:rgb(128, 128, 128)
+    color:rgb(64, 64, 64);
 }
 
 .inputGroup > input {
-    height: 3vh;
-    width: auto;
+    font-size: 1rem;
+    padding: 1vh .5vw;
+
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 5px;
+}
+
+.inputGroup > input:focus {
+    outline: none;
+    border: 1.5px solid rgb(124, 170, 255);
+    box-shadow: 2px 2px 5px 0px rgb(190, 190, 190);
+}
+
+.inputGroup > input::placeholder {
+    color: rgb(177, 177, 177);
+}
+
+.inputGroup > input[type=password]:invalid {
+    border: 1.5px solid rgb(255, 0, 0);
+}
+
+.inputGroup > input[type=password]:valid {
+    border: 1.5px solid rgb(0, 199, 27);
+}
+
+.inputGroup > input[type=password] {
+    border: 1.5px solid rgb(255, 0, 0);
 }
 
 /* ----------------- bottom content --------------- */
