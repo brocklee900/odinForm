@@ -98,7 +98,6 @@ body {
 .formSide > .topContent {
     font-size: 1.5rem;
     
-    
     padding-top: 12vh;
     padding-right: 10vw;
     padding-bottom: 3vh;
@@ -109,7 +108,7 @@ body {
     position: relative;
     
     font-size: 1.5rem;
-    font-weight:600;
+    font-weight: 600;
 
     background-color: white;
     
@@ -135,7 +134,7 @@ body {
 .inputGroup > label {
     font-size: .75rem;
     letter-spacing: .15rem;
-    color:rgb(64, 64, 64);
+    color: rgb(64, 64, 64);
 }
 
 .inputGroup > input {
@@ -164,10 +163,6 @@ body {
     border: 1.5px solid rgb(0, 199, 27);
 }
 
-.inputGroup > input[type=password] {
-    border: 1.5px solid rgb(255, 0, 0);
-}
-
 /* ----------------- bottom content --------------- */
 .formSide > .bottomContent {
     display: flex;
@@ -180,6 +175,25 @@ body {
 
 .formSide > .bottomContent > * {
     align-self: flex-start;
+}
+
+.formSide > .bottomContent > button {
+    font-size: .9rem;
+    font-weight: 600;
+    
+    padding: 1.5vh 5vw;
+    
+    color: white;
+    background-color: rgb(255, 187, 56);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 0px rgb(190, 190, 190);
+}
+
+.formSide > .bottomContent a {
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(255, 187, 56);
 }
 
 
